@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css/dashboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="tickets-management">
+        <div class="container">
+            <div class="left-right">
+                <div class="left-side" id="left-side">
+                    <div class="left-logo">
+                        <img src="img/close (2).png" alt="" id="cut" class="cut" onclick="again_cut()">
+                        <img src="img/logo2.png" alt="">
+                    </div>
+                    <div class="main-left">
+                        <div class="left-links"><img src="img/dashboard 1.png" alt="">
+                            <p> <a href="dashboard.html">Dashboard</a></p>
+                        </div>
+                        <div class="left-links"><img src="img/dashboard2.png" alt="">
+                            <p><a href="ticket-managment.html">Tickets Managment</a></p>
+                        </div>
+                        <div class="left-links"><img src="img/dashboard4.png" alt="">
+                            <p><a href="upload-tickets.html">Upload Ticket</a></p>
+                        </div>
+                        <div class="left-links"><img src="img/dascboard3.png" alt="">
+                            <p> <a href="">Vehicle information</a></p>
+                        </div>
+                        <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                            <p><a href="">Add Drivers</a></p>
+                        </div>
+                    </div>
+                    <div class="left-btn">
+
+                        <button>
+                            <div class="mainbtn">
+                                <div class="signout"><img src="img/SignOut.png" alt=""></div>
+                                <div class="logout-btn">Logout</div>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="right-nav">
+                        <div class="right-nav-p">
+                            <p>Dashboard</p>
+                        </div>
+                        <div class="right-nav-left">
+                            <div class="right-input">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <div class="bell-img">
+                                <img src="img/Bell.png" alt="">
+                                <div class="img-text">
+                                    <img src="img/Profile Picture.png" alt="">
+                                    <div class="name">
+                                        <p class="name-name">Wade Warden</p>
+                                        <p class="name-email">wadewarden@gmail.com</p>
+                                    </div>
+                                </div>
+                                <img src="img/down.png" alt="" id="view-profile" onclick="toggle()">
+                            </div>
+                            <div class="hamburger"><img src="img/hamburger.png" alt="" id="hamburger"
+                                    onclick=" left_toggle() "></div>
+                        </div>
+                        <div class="profile-logout" id="profile-logout">
+                            <div class="profile"> <img src="img/view.png" alt="">
+                                <p>View Profile</p>
+                            </div>
+                            <div class="logout"> <img src="img/SignOut2.png" alt="">
+                                <p>logout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tickets-management-main">
+                        <div class="tickets-management-container">
+                            <div class="tickets-management-heading">
+                                <p class="tickets-management-heading-p1">Tickets Management</p>
+                                <p class="tickets-management-heading-p2">Ticket management involves tracking and resolving customer inquiries efficiently. It
+                                    helps <br> prioritize tasks, assign responsibilities, and enhance service quality.
+                                </p>
+                            </div>
+                            <div class="tickets-management-upload">
+                                <button><a href="upload-tickets.html"><img src="img/upload.png" alt=""> Upload Ticket</a></button>
+                            </div>
+                        </div>
+                        <div class="tickets-container">
+                            <div class="main-tickets">
+                                <div class="tickets-container-heading">
+                                    <div id="options">
+                                        <div class="tickets-options" id="tickets-options">
+                                            <div class="detail2"> <img src="img/view.png" alt="">
+                                                <p>View Profile</p>
+                                            </div>
+                                            <div class="edit2"> <img src="img/edit.png" alt="">
+                                                <p>Edit</p>
+                                            </div>
+                                            <div class="delete2"> <img src="img/dustbin.png" alt="">
+                                                <p>Delete</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-container-heading-p1">
+                                        <p>Tickets No: 01</p>
+                                        <img src="img/info.png" alt="" id="info" >
+                                    </div>
+                                </div>
+                                <div class="tickets-information ">
+                                    <div class="tickets-name data">
+                                        <div class="tickets-name-p1">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                        <div class="tickets-name-p2">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-id data">
+                                        <div class="tickets-id-p1">
+                                            <p>Ticket ID</p>
+                                        </div>
+                                        <div class="tickets-id-p2">QZK-526</div>
+                                    </div>
+                                    <div class="tickets-date data">
+                                        <div class="ticket-date-heading">
+                                            <p>Date</p>
+                                        </div>
+                                        <div class="ticket-date ">
+                                            <p>24 May 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-time data">
+                                        <div class="time-heading">
+                                            <p>Time</p>
+                                        </div>
+                                        <div class="real-time">
+                                            <p>
+                                                08:00 AM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-status data">
+                                        <div class="status-heading">
+                                            <p>Status</p>
+                                        </div>
+                                        <div class="open">
+                                            <p>Open</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-tickets">
+                                <div class="tickets-container-heading">
+                                    <div class="tickets-container-heading-p1">
+                                        <p>Tickets No: 01</p>
+                                        <img src="img/info.png" alt="" id="info">
+                                    </div>
+                                </div>
+                                <div class="tickets-information ">
+                                    <div class="tickets-name data">
+                                        <div class="tickets-name-p1">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                        <div class="tickets-name-p2">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-id data">
+                                        <div class="tickets-id-p1">
+                                            <p>Ticket ID</p>
+                                        </div>
+                                        <div class="tickets-id-p2">QZK-526</div>
+                                    </div>
+                                    <div class="tickets-date data">
+                                        <div class="ticket-date-heading">
+                                            <p>Date</p>
+                                        </div>
+                                        <div class="ticket-date ">
+                                            <p>24 May 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-time data">
+                                        <div class="time-heading">
+                                            <p>Time</p>
+                                        </div>
+                                        <div class="real-time">
+                                            <p>
+                                                08:00 AM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-status data">
+                                        <div class="status-heading">
+                                            <p>Status</p>
+                                        </div>
+                                        <div class="open">
+                                            <p>Open</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-tickets">
+                                <div class="tickets-container-heading">
+                                    <div class="tickets-container-heading-p1">
+                                        <p>Tickets No: 01</p>
+                                        <img src="img/info.png" alt="" id="info">
+                                    </div>
+                                </div>
+                                <div class="tickets-information ">
+                                    <div class="tickets-name data">
+                                        <div class="tickets-name-p1">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                        <div class="tickets-name-p2">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-id data">
+                                        <div class="tickets-id-p1">
+                                            <p>Ticket ID</p>
+                                        </div>
+                                        <div class="tickets-id-p2">QZK-526</div>
+                                    </div>
+                                    <div class="tickets-date data">
+                                        <div class="ticket-date-heading">
+                                            <p>Date</p>
+                                        </div>
+                                        <div class="ticket-date ">
+                                            <p>24 May 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-time data">
+                                        <div class="time-heading">
+                                            <p>Time</p>
+                                        </div>
+                                        <div class="real-time">
+                                            <p>
+                                                08:00 AM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-status data">
+                                        <div class="status-heading">
+                                            <p>Status</p>
+                                        </div>
+                                        <div class="open">
+                                            <p>Open</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-tickets">
+                                <div class="tickets-container-heading">
+                                    <div class="tickets-container-heading-p1">
+                                        <p>Tickets No: 01</p>
+                                        <img src="img/info.png" alt="" id="info"> 
+                                    </div>
+                                </div>
+                                <div class="tickets-information ">
+                                    <div class="tickets-name data">
+                                        <div class="tickets-name-p1">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                        <div class="tickets-name-p2">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-id data">
+                                        <div class="tickets-id-p1">
+                                            <p>Ticket ID</p>
+                                        </div>
+                                        <div class="tickets-id-p2">QZK-526</div>
+                                    </div>
+                                    <div class="tickets-date data">
+                                        <div class="ticket-date-heading">
+                                            <p>Date</p>
+                                        </div>
+                                        <div class="ticket-date ">
+                                            <p>24 May 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-time data">
+                                        <div class="time-heading">
+                                            <p>Time</p>
+                                        </div>
+                                        <div class="real-time">
+                                            <p>
+                                                08:00 AM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-status data">
+                                        <div class="status-heading">
+                                            <p>Status</p>
+                                        </div>
+                                        <div class="open">
+                                            <p>Open</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-tickets">
+                                <div class="tickets-container-heading">
+                                    <div class="tickets-container-heading-p1">
+                                        <p>Tickets No: 01</p>
+                                        <img src="img/info.png" alt="" id="info">
+                                    </div>
+                                </div>
+                                <div class="tickets-information ">
+                                    <div class="tickets-name data">
+                                        <div class="tickets-name-p1">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                        <div class="tickets-name-p2">
+                                            <p>Tickets Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-id data">
+                                        <div class="tickets-id-p1">
+                                            <p>Ticket ID</p>
+                                        </div>
+                                        <div class="tickets-id-p2">QZK-526</div>
+                                    </div>
+                                    <div class="tickets-date data">
+                                        <div class="ticket-date-heading">
+                                            <p>Date</p>
+                                        </div>
+                                        <div class="ticket-date ">
+                                            <p>24 May 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-time data">
+                                        <div class="time-heading">
+                                            <p>Time</p>
+                                        </div>
+                                        <div class="real-time">
+                                            <p>
+                                                08:00 AM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tickets-status data">
+                                        <div class="status-heading">
+                                            <p>Status</p>
+                                        </div>
+                                        <div class="open">
+                                            <p>Open</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="dashboard js/dashboard.js"></script>
+</body>
+
+</html>

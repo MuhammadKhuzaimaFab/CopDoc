@@ -1,0 +1,873 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins";
+
+            scroll-behavior: smooth;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-black-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-black-webfont.woff") format("woff");
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-bold-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-bold-webfont.woff") format("woff");
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-extrabold-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-extrabold-webfont.woff") format("woff");
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-extralight-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-extralight-webfont.woff") format("woff");
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-medium-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-medium-webfont.woff") format("woff");
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-regular-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-regular-webfont.woff") format("woff");
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-semibold-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-semibold-webfont.woff") format("woff");
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: "poppins";
+            src: url("/fonts/poppins-thin-webfont.woff2") format("woff2"),
+                url("/fonts/poppins-thin-webfont.woff") format("woff");
+            font-weight: 100;
+        }
+
+
+
+
+        .container {
+            max-width: 1750px;
+            width: 100%;
+            margin: 0px auto;
+            /* padding: 0px 20px; */
+        }
+
+        .left-side {
+            height: 100vh;
+            width: 300px;
+            background: #131133;
+
+        }
+
+        .left-logo {
+            text-align: center;
+            position: relative;
+
+        }
+
+        .left-links p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .left-links.active {
+
+            background: #1A73E8;
+        }
+
+        .left-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 10px 11px;
+            line-height: 2;
+            margin-bottom: 10px;
+        }
+
+        .left-links:hover {
+            background: #1A73E8;
+            border-radius: 5px;
+        }
+
+        .main-left {
+            display: flex;
+            line-height: 2.5;
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            margin: 0 20px;
+            margin-top: 40px;
+            height: calc(100dvh - 190px);
+
+
+        }
+
+        .left-logo img {
+            margin-top: 20px;
+        }
+
+        .left-btn {
+            text-align: center;
+
+        }
+
+        .left-btn button {
+
+            background: transparent;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid #FFFFFC;
+            border-radius: 10px;
+        }
+
+        .mainbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cut {
+            width: 14px;
+            position: absolute;
+            right: 15px;
+            display: none;
+        }
+
+        .logout-btn a {
+            color: #ffffff;
+        }
+
+        /* ---------------------------------------------------left------------------------------------------------------ */
+        .left-right {
+            display: flex;
+        }
+
+        .right-side {
+            width: calc(100% - 255px);
+        }
+
+        .name-name {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .name-email {
+            font-size: 12px;
+        }
+
+        .right-nav-p p {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 23px;
+            align-items: center;
+            box-shadow: 0px 4px 18px 0px #2F2B3D1A;
+            position: relative;
+
+        }
+
+        .right-nav-left {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .bell-img {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .img-text {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .right-input input {
+            border: 1px solid #D8DADC;
+            padding: 12px 22px;
+            border-radius: 10px;
+            background-color: #F0F0F4;
+            font-size: 16px;
+
+        }
+
+        #view-profile {
+            cursor: pointer;
+        }
+
+        .profile-logout {
+            width: 250px;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 0px 14px 0px #0000001A;
+            border-radius: 10px;
+            right: 20px;
+            top: 99px;
+            display: none;
+            z-index: 1;
+        }
+
+        .profile,
+        .logout {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .profile:hover {
+            background: #287F7133;
+
+        }
+
+        .logout:hover {
+            background: #287F7133;
+
+        }
+
+        .padding-dash {
+            margin-top: 10px;
+            padding: 20px;
+            position: relative;
+            overflow-y: auto;
+            height: calc(100dvh - 112px);
+
+        }
+
+        .filter {
+            display: flex;
+            padding: 10px;
+            background-color: #F0F0F4;
+            gap: 5px;
+            align-items: center;
+            border-radius: 10px;
+
+
+        }
+
+        .filter-p1 {
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+        .filter-img1 img {
+            padding: 5px;
+            background: #2C0C4D26;
+            border-radius: 10px;
+        }
+
+        .filter-img2 {
+            cursor: pointer;
+        }
+
+        .main-dash {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+        }
+
+        .dash-heading-name {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .dash-heading-p {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .detail,
+        .edit,
+        .delete {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .detail:hover {
+            background: #287F7133;
+        }
+
+        .edit:hover {
+            background: #287F7133;
+        }
+
+        .delete:hover {
+            background: #287F7133;
+        }
+
+        .main-filter {
+            flex-direction: column;
+            display: flex;
+            gap: 0px;
+            width: 200px;
+            box-shadow: 0px 0px 14px 0px #0000001A;
+            border-radius: 10px;
+        }
+
+        #left-filter {
+            display: none;
+            background-color: white;
+            position: absolute;
+            right: 20px;
+            top: 100px;
+        }
+
+        .dash-card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .dash-card1 {
+            /* max-width: 100%; */
+            display: flex;
+            justify-content: space-between;
+            /* padding: 7px; */
+            box-shadow: 6px 6px 34px 0px #0000000D;
+            line-height: 36px;
+            align-items: center;
+            padding: 12px 12px;
+            border-radius: 14px;
+        }
+
+        .dash-card-img img {
+            padding: 10px;
+            background: #ff990042;
+            border-radius: 8px;
+            margin-left: 50px;
+
+        }
+
+        .dash-card-p1 {
+            font-weight: 500;
+            font-size: 15px;
+            color: #586a7b;
+        }
+
+
+        .dash-card-p2 {
+            font-weight: 600;
+            font-size: 20px;
+
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .main-tickets {
+            width: calc(25% - 19px);
+            margin-top: 30px;
+            position: relative;
+
+        }
+
+        .all-tickets {
+            margin-top: 50px;
+            background: #F0F0F4;
+            padding: 30px;
+            border-radius: 14px;
+        }
+
+        .data {
+            width: calc(50% - 25px);
+            padding: 5px;
+        }
+
+        .tickets-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .tickets-container-heading-p1 {
+            display: flex;
+            background: black;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .tickets-heading-p1 {
+            font-size: 30px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        .tickets-heading-p2 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            border-bottom: 2px dashed #0000004D;
+            padding-bottom: 20px;
+        }
+
+
+        .tickets-name-p1 {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .tickets-name-p2 {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .tickets-id-p1 {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .tickets-id-p2 {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .ticket-date-heading {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .ticket-date {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .time-heading {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .real-time {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        .tickets-status {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .open {
+            color: #1A73E8;
+            font-size: 14px;
+
+
+        }
+
+        .tickets-information {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 0 0 10px 10px;
+            background: #FAFAFA;
+            padding: 10px 0px;
+        }
+
+        .detail2,
+        .edit2,
+        .delete2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .edit2:hover {
+            background: #287F7133;
+        }
+
+        .detail2:hover {
+            background: #287F7133;
+        }
+
+        .delete2:hover {
+            background: #287F7133;
+        }
+
+
+        .tickets-options {
+            position: absolute;
+            background: white;
+            top: 53px;
+            width: 152px;
+            right: 11px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 14px 0px #0000001A;
+            display: block;
+
+        }
+
+
+        .tickets-management-main {
+            margin-top: 10px;
+            padding: 20px;
+            height: calc(100dvh - 112px);
+            overflow-y: auto;
+        }
+
+        .tickets-management-heading-p1 {
+            font-size: 25px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+
+        .tickets-management-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 25px;
+            border-bottom: 2px dashed #bcbcbc;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+
+        }
+
+        .tickets-management-upload button {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            font-size: 18px;
+            gap: 10px;
+            padding: 17px 27px;
+            background: #1A73E8;
+            border: none;
+            border-radius: 14px;
+        }
+
+        .tickets-management-upload a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        /* .upload-front-box input::file-selector-button{
+            font-weight: bold;
+            background: #1A73E8;
+
+            color: white;
+            padding: 15px 25px;
+            border: thin solid grey;
+            border-radius: 3px;
+            border: none;
+            border-radius: 40px;
+
+        } */
+        .upload-front-box .upload-p {
+            background: #1A73E8;
+
+            color: white;
+            padding: 15px 25px;
+            border: thin solid grey;
+            border-radius: 3px;
+            border: none;
+            border-radius: 40px;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .upload-front {
+            width: 30%;
+            max-width: 400px;
+        }
+
+        .upload-img {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+
+        .upload-front-box {
+            border: 1px dashed #bcbcbc;
+            padding: 15px 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .upload-front-box p {
+            padding-top: 30px;
+
+        }
+
+        .upload-front-heading {
+            font-size: 17px;
+            padding-bottom: 10px;
+
+        }
+
+        .inputs input,
+        .inputs select {
+            width: 100%;
+            display: block;
+            /* margin: 28px auto; */
+            border: 1px solid #D8DADC;
+            padding: 18px 12px;
+            border-radius: 10px;
+            background-color: #F8F9FB;
+            font-size: 16px;
+        }
+
+
+        .inputs {
+            /* display: flex;
+            flex-wrap: wrap; */
+            width: calc(50% - 20px);
+            margin: 20px 0;
+        }
+
+        .all-input {
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .select-arrow {
+            background-image: url("../img/down\ arrow.png");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 10px) center;
+            appearance: none;
+            padding-right: 36px !important;
+        }
+
+        .upload-management-btn-1 button {
+            color: white;
+            padding: 21px 24px;
+            background: #1A73E8;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+
+        }
+        .upload-management-btn-2 button {
+            color: rgb(0, 0, 0);
+            padding: 21px 40px;
+            font-size: 18px;
+            border: 1px solid #1A73E8;
+            border-radius: 30px;
+            box-shadow: 0px 0px 4px 6px #E2DCFF;
+            
+
+        }
+        .upload-management-btn-3 button {
+            color: rgb(0 0, 0);
+            padding: 21px 60px;
+            font-size: 18px;
+            border: 1px solid #1A73E8;
+            border-radius: 30px;
+            box-shadow: 0px 0px 4px 6px #E2DCFF;
+            
+        }
+
+        .upload-management-btn{
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+        }
+
+
+        .upload-form{
+            height: 100%;
+        }
+        .upload-form-wrapper{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (min-width:1060px) {
+            .left-side {
+                display: block !important;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:1060px) {
+            .left-side {
+                display: none;
+            }
+
+            .left-side {
+                position: absolute;
+                z-index: 99;
+            }
+
+            .cut {
+                display: block;
+            }
+
+            .right-side {
+                width: 100%;
+            }
+
+            .right-nav-p {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            /* .cut{
+                display: block;
+            } */
+        }
+
+        @media screen and (max-width:1000px) {
+            .right-input {
+                display: none;
+            }
+        }
+
+
+        /* --------------------------------------nav----------------------------------------- */
+        @media screen and (max-width:970px) {
+            .tickets-management-container {
+                display: flex;
+                line-height: 25px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+
+        @media screen and (max-width:900px) {
+            .main-tickets {
+                width: calc(35% - 20px);
+            }
+
+            .tickets-container {
+                justify-content: space-evenly;
+            }
+        }
+
+        @media screen and (max-width:824px) {
+
+            .dash-card-container {
+                flex-wrap: wrap;
+            }
+
+            .dash-card1 {
+                width: 47%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .main-tickets {
+                width: calc(51% - 20px);
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .filter {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            #left-filter {
+                top: 163px;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .dash-card1 {
+                width: 100%;
+            }
+
+            .name {
+                display: none;
+            }
+
+            .upload-front {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:550px) {
+
+            .inputs {
+                width: calc(100% - 30px);
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .main-tickets {
+                width: calc(100%);
+            }
+        }
