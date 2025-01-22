@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css/dashboard.css">
-    <title>Admin-panel</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="main-left">
                     <div class="left-links"><img src="img/dashboard 1.png" alt="">
-                        <p> <a href="">Dashboard</a></p>
+                        <p> <a href="admin-panel.html">Dashboard</a></p>
                     </div>
                     <div class="left-links"><img src="img/dashboard2.png" alt="">
                         <p><a href="admin-user.html">User</a></p>
@@ -53,7 +53,7 @@
             <div class="right-side">
                 <div class="right-nav">
                     <div class="right-nav-p">
-                        <p>Dashboard</p>
+                        <p>Notification</p>
                     </div>
                     <div class="right-nav-left">
                         <div class="right-input">
@@ -83,91 +83,63 @@
                     </div>
                 </div>
                 <div class="padding-dash">
-                    <div class="main-dash">
-                        <div class="main-dash-heading">
-                            <div class="dash-heading-name">
-                                <p>Dashboard</p>
+                    <div class="user-table-heading-container">
+                        <div class="user-table-heading">
+                            <p class="tickets-management-heading-p1">Notification</p>
+                            <p class="tickets-management-heading">Notifications are alerts that inform users about
+                                important updates, messages, or events. <br>
+                                They help keep users engaged and informed in real-time. </p>
+                        </div>
+                        <div class="clear-all">
+                            <p>Clear all</p>
+                        </div>
+                    </div>
+                    <div class="notification-container">
+                        <div class="bell-subcription-container">
+                            <div class="bell-subcription">
+                                <div class="notification-bell-img"><img src="img/bell2.png" alt=""></div>
+                                <div class="bell-text">Subcription Alert</div>
                             </div>
-                            <div class="dash-heading-p">
-                                <p>Hi, Samantha. Welcome back.</p>
+                            <div class="notification-date">
+                                <p>10 months ago &nbsp; june/29/24</p>
                             </div>
                         </div>
-                        <div class="filter">
-                            <div class="filter-img1"><img src="img/filter1.png" alt=""></div>
-                            <div class="filter-ps">
-                                <div class="filter-p1">
-                                    <p>Filter Periode</p>
-                                </div>
-                                <div class="filter-p2">
-                                    <p>17 April 2024 - 21 May 2024</p>
-                                </div>
+                        <div class="main-message">
+                            <div class="message-img">
+                                <img src="img/notification-man-img.png" alt="">
+                                <p>Alex Martin</p>
                             </div>
-                            . <div class="filter-img2"><img src="img/filter2.png" alt="" id="filter-img"
-                                    onclick="filter_toggle()"></div>
-                        </div>
-                        <div id="left-filter">
-                            <div class="main-filter" id="main-filter">
-                                <div class="detail"> <img src="img/view.png" alt="">
-                                    <p>View Profile</p>
-                                </div>
-                                <div class="edit"> <img src="img/edit.png" alt="">
-                                    <p>Edit</p>
-                                </div>
-                                <div class="delete"> <img src="img/dustbin.png" alt="">
-                                    <p>Delete</p>
-                                </div>
+                            <div class="message-text">
+                                <p>Notifications are alerts that inform users about important updates, messages, or events. <br>
+                                    They help keep users engaged and informed in real-time. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="dash-card">
-                        <div class="dash-card-container">
-                            <div class="dash-card1">
-                                <div class="dash-card-p">
-                                    <p class="dash-card-p1">Total Uploaded Tickets</p>
-                                    <p class="dash-card-p2">10</p>
-                                </div>
-                                <div class="dash-card-img">
-                                    <img src="img/card img 1.png" alt="">
-                                </div>
+                    <div class="notification-container">
+                        <div class="bell-subcription-container">
+                            <div class="bell-subcription">
+                                <div class="notification-bell-img"><img src="img/bell2.png" alt=""></div>
+                                <div class="bell-text">Subcription Alert</div>
                             </div>
-                            <div class="dash-card1">
-                                <div class="dash-card-p">
-                                    <p class="dash-card-p1">Total Uploaded Tickets</p>
-                                    <p class="dash-card-p2">04</p>
-                                </div>
-                                <div class="dash-card-img">
-                                    <img src="img/card img 1.png" alt="">
-                                </div>
+                            <div class="notification-date">
+                                <p>10 months ago &nbsp; june/29/24</p>
                             </div>
-                            <div class="dash-card1">
-                                <div class="dash-card-p">
-                                    <p class="dash-card-p1">Total Uploaded Tickets</p>
-                                    <p class="dash-card-p2">03</p>
-                                </div>
-                                <div class="dash-card-img">
-                                    <img src="img/card img 1.png" alt="">
-                                </div>
+                        </div>
+                        <div class="main-message">
+                            <div class="message-img">
+                                <img src="img/notification-man-img.png" alt="">
+                                <p>Alex Martin</p>
+                            </div>
+                            <div class="message-text">
+                                <p>Notifications are alerts that inform users about important updates, messages, or events. <br>
+                                    They help keep users engaged and informed in real-time. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="graph">
-                        <div class="three-graph">
-                            <div class="graph2"><canvas id="mySecondPieChart"></canvas></div>
-                            <div class="graph3"> <canvas id="mythirdPieChart"></canvas></div>
-
-
-
-                        </div>
-
-                        <canvas id="gh-2" width="400" height="400"></canvas>
-                    </div>
-
                 </div>
             </div>
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="dashboard js/dashboard.js"></script>
+
 </body>
-
-</html>

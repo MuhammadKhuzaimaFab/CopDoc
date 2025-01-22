@@ -544,7 +544,8 @@
             height: calc(100dvh - 112px);
             overflow-y: auto;
         }
-        .tickets-management-heading{
+
+        .tickets-management-heading {
             line-height: 25px;
         }
 
@@ -833,25 +834,35 @@
 
         #myPieChart {
             margin-bottom: 30px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .three-graph {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .main-table th {
             padding: 20px 40px;
         }
 
-        td {
+        .main-table {
             padding-left: 20px;
             text-align: center;
         }
-        .main-table{
+
+        .main-table {
             margin-top: 50px;
             border-spacing: 0;
             width: 100%;
         }
-        .main-table thead{
+
+        .main-table thead {
             background: black;
             color: white;
-        
+
             margin-top: 50px;
         }
 
@@ -860,25 +871,135 @@
             align-items: center;
             gap: 5px;
         }
-        .main-table td{
+
+        .main-table td {
             /* margin-bottom: 10px; */
             margin-top: 20px;
             border-bottom: 1px dashed gray;
             padding-bottom: 10px;
         }
-        .action-btn{
+
+        .action-btn {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .main-table tbody{
-            box-shadow: 0px 4px 18px 0px #2F2B3D1A;
 
+        .active {
+            color: #19B400;
         }
-        .user-table{
+
+        .inactive {
+            color: #B80000;
+        }
+
+        .main-table tbody {
+            box-shadow: 0px 4px 18px 0px #2F2B3D1A;
+        }
+
+        .user-table {
             overflow-x: auto;
         }
 
+        .admin-tickets-btn-1 {
+            background: #B80000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 140px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+
+
+        .admin-tickets-btn-2 {
+            /* padding: 10px 50px; */
+            background: #1A73E8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 100px;
+            height: 35px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+
+
+        .admin-tickets-btn {
+            background: #FAFAFA;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+            margin-bottom: 10px;
+            padding: 0px 10px 10px;
+
+        }
+
+        /* .height{
+            height: 0px !important;
+            overflow-y: none !important;
+        } */
+        .user-table-heading-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 40px;
+
+        }
+
+        .clear-all {
+            color: #1A73E8;
+            cursor: pointer;
+        }
+
+        .bell-subcription {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .notification-bell-img img {
+            width: 40px;
+        }
+
+        .bell-text {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .bell-subcription-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .notification-container {
+            background: #EEEEEE;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .message-img {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-top: 20px;
+        }
+
+        .main-message {
+            padding-left: 40px;
+        }
+
+        .message-text {
+            line-height: 25px;
+            padding-top: 10px;
+        }
 
 
 
@@ -968,6 +1089,15 @@
             .tickets-container {
                 justify-content: space-evenly;
             }
+
+            .user-table-heading-container {
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .clear-all {
+                padding-top: 20px;
+            }
         }
 
         @media screen and (max-width:824px) {
@@ -986,40 +1116,6 @@
             .admin-right {
                 display: none;
             }
-        }
-
-
-        @media screen and (max-width: 600px) {
-            .main-tickets {
-                width: calc(51% - 20px);
-            }
-        }
-
-        @media screen and (max-width:600px) {
-            .filter {
-                width: 100%;
-                justify-content: space-between;
-                margin-top: 20px;
-            }
-
-            #left-filter {
-                top: 163px;
-            }
-        }
-
-        @media screen and (max-width:550px) {
-            .dash-card1 {
-                width: 100%;
-            }
-
-            .name {
-                display: none;
-            }
-
-            .upload-front {
-                width: 100%;
-            }
-
         }
 
         @media screen and (max-width:660px) {
@@ -1044,6 +1140,49 @@
                 width: calc(100% - 30px);
             }
         }
+
+
+        @media screen and (max-width:600px) {
+            .filter {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            #left-filter {
+                top: 163px;
+            }
+
+            .main-tickets {
+                width: calc(51% - 20px);
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .dash-card1 {
+                width: 100%;
+            }
+
+            .name {
+                display: none;
+            }
+
+            .upload-front {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:500px) {
+            .bell-subcription-container {
+                flex-direction: column;
+            }
+
+            .main-message {
+                padding: 0px;
+            }
+        }
+
 
         @media screen and (max-width: 450px) {
             .upload-management-btn-2 {
