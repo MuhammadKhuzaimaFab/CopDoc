@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css/dashboard.css">
+    <title>Driver-information</title>
+</head>
+
+<body>
+    <section class="tickets-management">
+        <div class="left-right">
+            <div class="left-side" id="left-side">
+                <div class="left-logo">
+                    <img src="img/close (2).png" alt="" id="cut" class="cut" onclick="again_cut()">
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="main-left">
+                    <div class="left-links"><img src="img/dashboard 1.png" alt="">
+                        <p> <a href="admin-panel.html">Dashboard</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dashboard2.png" alt="">
+                        <p><a href="admin-user.html">User</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dashboard4.png" alt="">
+                        <p><a href="admin-ticket-management.html">Ticket Management</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dascboard3.png" alt="">
+                        <p> <a href="admin-vehicle-information.html">Vehicle information</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dascboard3.png" alt="">
+                        <p> <a href="admin-driver-information.html">Driver information</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                        <p><a href="admin-subcription.html">Subcription</a></p>
+                    </div>
+                    <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                        <p><a href="admin-notification.html">Notification</a></p>
+                    </div>
+                </div>
+                <div class="left-btn">
+
+                    <button>
+                        <div class="mainbtn">
+                            <div class="signout"><img src="img/SignOut.png" alt=""></div>
+                            <div class="logout-btn"><a href="index.html">Logout</a></div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-nav">
+                    <div class="right-nav-p">
+                        <p>Vehicle Information</p>
+                    </div>
+                    <div class="right-nav-left">
+                        <div class="right-input">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="bell-img">
+                            <img src="img/Bell.png" alt="">
+                            <div class="img-text">
+                                <img src="img/Profile Picture.png" alt="">
+                                <div class="name">
+                                    <p class="name-name">Wade Warden</p>
+                                    <p class="name-email">wadewarden@gmail.com</p>
+                                </div>
+                            </div>
+                            <img src="img/down.png" alt="" id="view-profile" onclick="toggle()">
+                        </div>
+                        <div class="hamburger"><img src="img/hamburger.png" alt="" id="hamburger"
+                                onclick=" left_toggle() "></div>
+                    </div>
+                    <div class="profile-logout" id="profile-logout">
+                        <div class="profile"> <img src="img/view.png" alt="">
+                            <p>View Profile</p>
+                        </div>
+                        <div class="logout"> <img src="img/SignOut2.png" alt="">
+                            <p>logout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets-management-main ">
+                    <form class="upload-form" action="">
+                        <div class="upload-form-wrapper">
+                            <div>
+                                <div class="tickets-management-container">
+                                    <div class="tickets-management-heading">
+                                        <p class="tickets-management-heading-p1">Add Vechicle Information</p>
+                                        <p class="tickets-management-heading-p2">Please fill out this form with the
+                                            vehicle details. You'll need vehicle info (make, model, color, license
+                                            plate, and VIN).
+                                            <br> This ensures accurate records and efficient processing.
+                                    </div>
+                                </div>
+
+                                <div class="all-input">
+                                    <div class="inputs">
+                                        <select name="" id="" class="select-arrow">
+                                            <option value="" hidden selected disabled>Driver Information</option>
+                                            <option value="">option 1</option>
+                                            <option value="">option 1</option>
+                                            <option value="">option 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputs">
+                                        <input type="text" placeholder="License Plate Number">
+                                    </div>
+                                    <div class="inputs">
+                                        <input type="text" placeholder="Vechicle-type">
+                                    </div>
+                                    <div class="inputs">
+                                        <input type="text" placeholder="vehicle made">
+                                    </div>
+                                    <div class="inputs">
+                                        <input type="text" placeholder="Vehicle model">
+                                    </div>
+
+                                    <div class="inputs">
+                                        <input type="text" placeholder="vehicle-color">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-management-btn">
+                                <div class="upload-management-btn-1"><button>Save and Submit</button></div>
+                                <div class="upload-management-btn-2"><button>Safe for Now</button></div>
+                                <div class="upload-management-btn-3"> <button>Cancel</button></div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <script src="dashboard js/dashboard.js"></script>
+    </section>
+</body>
+
+</html>
