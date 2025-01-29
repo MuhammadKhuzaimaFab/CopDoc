@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css/dashboard.css">
+    <title>Ticket Management</title>
+</head>
+
+<body>
+    <section class="tickets-management">
+        <div class="left-right">
+            <div class="left-side" id="left-side">
+                <div class="left-logo">
+                    <img src="img/close (2).png" alt="" id="cut" class="cut" onclick="again_cut()">
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="main-left">
+                    <a href="dashboard.html"><div class="left-links"><img src="img/dashboard 1.png" alt="">
+                         <p> Dashboard</p>
+                     </div></a>
+                     <a href="ticket-managment.html"><div class="left-links"><img src="img/dashboard2.png" alt="">
+                         <p>Tickets Managment</p>
+                     </div></a>
+                     <a href="upload-tickets.html"><div class="left-links"><img src="img/dashboard4.png" alt="">
+                         <p>Upload Ticket</p>
+                     </div></a>
+                     <a href="vehicle-information.html"><div class="left-links"><img src="img/dascboard3.png" alt="">
+                         <p> Vehicle information</p>
+                     </div></a>
+                   <a href="driver-information.html">  <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                         <p>Add Drivers</p>
+                     </div></a>
+                 </div>
+                <div class="left-btn">
+
+                    <button>
+                        <div class="mainbtn">
+                            <div class="signout"><img src="img/SignOut.png" alt=""></div>
+                            <div class="logout-btn"><a href="index.html">Logout</a></div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-nav">
+                    <div class="right-nav-p">
+                        <p>Ticket Management</p>
+                    </div>
+                    <div class="right-nav-left">
+                        <div class="right-input">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="bell-img">
+                            <img src="img/Bell.png" alt="">
+                            <div class="img-text">
+                                <a href="user-profile.html"><img src="img/Profile Picture.png" alt=""></a> 
+                                <div class="name">
+                                    <p class="name-name">Wade Warden</p>
+                                    <p class="name-email">wadewarden@gmail.com</p>
+                                </div>
+                            </div>
+                            <img src="img/down.png" alt="" id="view-profile" onclick="toggle()">
+                        </div>
+                        <div class="hamburger"><img src="img/hamburger.png" alt="" id="hamburger"
+                                onclick=" left_toggle() "></div>
+                    </div>
+                    <div class="profile-logout" id="profile-logout">
+                        <div class="profile"> <img src="img/view.png" alt="">
+                            <p>View Profile</p>
+                        </div>
+                        <div class="logout"> <img src="img/SignOut2.png" alt="">
+                            <p>logout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-container">
+                    <form action="">
+                        <div class="main-payment">
+                            <div class="full">
+                                <div class="payment-heading">
+                                    <p class="payment-heading-p1">Choose How To Pay </p>
+                                    <div class="lock">
+                                        <img src="img/lock (1) 1.png" alt="">
+                                        <p>All transaction are secure and encrypted.</p>
+                                    </div>
+                                </div>
+                                <div class="payment-heading-p1-btn">
+                                    <button class="payment-heading-p1-btn1">Ultimate add-free</button>
+                                    <button class="payment-heading-p1-btn2">Edit</button>
+                                </div>
+                            </div>
+                            <div class="payment-inputs">
+                                <div class="lhs">
+                                    <p class="lhs-p1">Your Subcription</p>
+                                    <p class="lhs-p2">Billing</p>
+                                    <div class="billing-name"> <input type="text" name="" id=""
+                                            placeholder="John-smith">
+                                    </div>
+                                    <div class="card-number"> <input type=" text" name="" id=""
+                                            placeholder="Card-number">
+                                        <div class="payment-card">
+                                            <img src="img/smart-card.png" alt="">
+                                            <img src="img/visa.png" alt="">
+                                            <img src="img/paypal.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="expriation-cvv">
+                                        <div class="expiration-container">
+                                            <div class="expiration"><input type="text" name="" id=""
+                                                    placeholder="Expiration"></div>
+                                        </div>
+                                        <div class="cvv-container">
+                                            <div class="cvv"><input type="text" placeholder="CVV"></div>
+                                        </div>
+                                    </div>
+                                    <div class="country">
+                                        <input type="text" class="country" placeholder="Enter Country">
+                                    </div>
+                                    <div class="zip-code">
+                                        <input type="text" class="zip-code" placeholder="Zip-Code">
+                                    </div>
+                                    <div class="lhs-text">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                    <div class="duration">
+                                        <p>40$ / Month / User</p>
+                                    </div>
+                                    <div class="payment-btn">
+                                        <button>Done</button>
+                                    </div>
+
+                                </div>
+                                <div class="rhs">
+                                    <div class="rhs-heading">
+                                        <p>Membership Type</p>
+                                    </div>
+
+                                    <div class="radio-1">
+                                        <div class="radio-button"><input type="radio" name="radio" id="radio">
+                                            <label for="radio">
+                                                <p class="radio-p1">Pay Monthly</p>
+                                                <p>40$ / Month / User</p>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="radio-2">
+                                        <div class="radio-button"><input type="radio" name="radio" id="radio-2">
+                                            <label for="radio-2">
+                                                <p class="radio-p1">Pay Annualy</p>
+                                                <p>18$ / Month / User</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="last-radio">
+                                        <div class="p-button">
+                                            <p class="p-button-p">Standard</p>
+                                            <button class="p-btn-button">Popular</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
