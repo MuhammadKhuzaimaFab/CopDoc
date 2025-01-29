@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css/dashboard.css">
+    <title>Ticket Management</title>
+</head>
+
+<body>
+    <section class="tickets-management">
+        <div class="left-right">
+            <div class="left-side" id="left-side">
+                <div class="left-logo">
+                    <img src="img/close (2).png" alt="" id="cut" class="cut" onclick="again_cut()">
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="main-left">
+                    <a href="dashboard.html">
+                        <div class="left-links"><img src="img/dashboard 1.png" alt="">
+                            <p> Dashboard</p>
+                        </div>
+                    </a>
+                    <a href="ticket-managment.html">
+                        <div class="left-links"><img src="img/dashboard2.png" alt="">
+                            <p>Tickets Managment</p>
+                        </div>
+                    </a>
+                    <a href="upload-tickets.html">
+                        <div class="left-links"><img src="img/dashboard4.png" alt="">
+                            <p>Upload Ticket</p>
+                        </div>
+                    </a>
+                    <a href="vehicle-information.html">
+                        <div class="left-links"><img src="img/dascboard3.png" alt="">
+                            <p> Vehicle information</p>
+                        </div>
+                    </a>
+                    <a href="driver-information.html">
+                        <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                            <p>Add Drivers</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="left-btn">
+
+                    <button>
+                        <div class="mainbtn">
+                            <div class="signout"><img src="img/SignOut.png" alt=""></div>
+                            <div class="logout-btn"><a href="index.html">Logout</a></div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-nav">
+                    <div class="right-nav-p">
+                        <p>Ticket Management</p>
+                    </div>
+                    <div class="right-nav-left">
+                        <div class="right-input">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="bell-img">
+                            <img src="img/Bell.png" alt="">
+                            <div class="img-text">
+                                <a href="user-profile.html"><img src="img/Profile Picture.png" alt=""></a>
+                                <div class="name">
+                                    <p class="name-name">Wade Warden</p>
+                                    <p class="name-email">wadewarden@gmail.com</p>
+                                </div>
+                            </div>
+                            <img src="img/down.png" alt="" id="view-profile" onclick="toggle()">
+                        </div>
+                        <div class="hamburger"><img src="img/hamburger.png" alt="" id="hamburger"
+                                onclick=" left_toggle() "></div>
+                    </div>
+                    <div class="profile-logout" id="profile-logout">
+                        <div class="profile"> <img src="img/view.png" alt="">
+                            <p>View Profile</p>
+                        </div>
+                        <div class="logout"> <img src="img/SignOut2.png" alt="">
+                            <p>logout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-container">
+                    <form action="">
+                        <div class="my-container">
+                            <div class="card-container">
+                                <div class="card-text">
+                                    <div class="card-text-p1">
+                                        <p>Choose your plan</p>
+                                    </div>
+                                    <div class="card-text-p2">
+                                        <p>Select a plan tailored yor need</p>
+                                    </div>
+                                </div>
+                                <div class="main-card">
+                                    <div class="card" id="prenium">
+                                        <p class="card-type">Prenium Price</p>
+                                        <p class="card-price">$ 79.99</p>
+                                        <p>Monthly</p>
+
+                                        <p class="card-text-para">
+                                            The Premium Plan offers unlimited ticket handling annually,
+                                            making it perfect for those who receive multiple tickets
+                                            throughout the year. This plan ensures that no matter how many
+                                            tickets you get, we've got you covered with top-notch service
+                                            and support.
+                                        </p>
+                                        <div class="features-section">
+                                            <p class="features-heading">Features:</p>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Unlimited traffic ticket handling per year</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Priority processing for faster resolutio</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Dedicated customer support with extended hours</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Comprehensive management tools and notifications</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-btn">
+                                            <button><a href="payment.html"> Buy Now</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="standard">
+                                        <p class="card-type">Standard</p>
+                                        <p class="card-price">$ 49.99</p>
+                                        <p>Monthly</p>
+                                        <p class="card-text-para" id="card-text-para">
+                                            Our Standard Plan is designed to cover a specific number of
+                                            tickets per year, providing you with reliable and efficient
+                                            handling for your traffic tickets. Ideal for individuals who
+                                            receive occasional tickets and want peace of mind knowing they
+                                            have professional assistance when needed.
+                                        </p>
+                                        <div class="features-section">
+                                            <p class="features-heading">Features:</p>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Covers a set number of traffic tickets annually</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Professional handling and resolution of tickets</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Access to customer support for any inquiries</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>
+                                                    Easy tracking and management of your tickets through our
+                                                    online portal
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-btn">
+                                            <button><a href="payment.html"> Buy Now</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="card" id="Family">
+                                        <p class="card-type">Family Price</p>
+                                        <p class="card-price">$ 179.99</p>
+                                        <p>Monthly</p>
+                                        <p class="card-text-para">
+                                            The Premium Plan offers unlimited ticket handling annually,
+                                            making it perfect for those who receive multiple tickets
+                                            throughout the year. This plan ensures that no matter how many
+                                            tickets you get, we've got you covered with top-notch service
+                                            and support.
+                                        </p>
+                                        <div class="features-section">
+                                            <p class="features-heading">Features:</p>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Unlimited traffic ticket handling per year</p>
+                                            </div>
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Priority processing for faster resolutio</p>
+                                            </div>
+
+                                            <div class="features-types">
+                                                <img src="img/tick.png" alt="" />
+                                                <p>Access to customer support for any inquiries</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-btn">
+                                            <button><a href="payment.html"> Buy Now</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css/dashboard.css">
+    <title>user profile</title>
+</head>
+
+<body>
+    <section class="tickets-management">
+        <div class="left-right">
+            <div class="left-side" id="left-side">
+                <div class="left-logo">
+                    <img src="img/close (2).png" alt="" id="cut" class="cut" onclick="again_cut()">
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="main-left">
+                    <a href="dashboard.html"><div class="left-links"><img src="img/dashboard 1.png" alt="">
+                         <p> Dashboard</p>
+                     </div></a>
+                     <a href="ticket-managment.html"><div class="left-links"><img src="img/dashboard2.png" alt="">
+                         <p>Tickets Managment</p>
+                     </div></a>
+                     <a href="upload-tickets.html"><div class="left-links"><img src="img/dashboard4.png" alt="">
+                         <p>Upload Ticket</p>
+                     </div></a>
+                     <a href="vehicle-information.html"><div class="left-links"><img src="img/dascboard3.png" alt="">
+                         <p> Vehicle information</p>
+                     </div></a>
+                   <a href="driver-information.html">  <div class="left-links"><img src="img/dashboard 5.png" alt="">
+                         <p>Add Drivers</p>
+                     </div></a>
+                 </div>
+                <div class="left-btn">
+
+                    <button>
+                        <div class="mainbtn">
+                            <div class="signout"><img src="img/SignOut.png" alt=""></div>
+                            <div class="logout-btn"><a href="index.html">Logout</a></div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-nav">
+                    <div class="right-nav-p">
+                        <p>Driver Information</p>
+                    </div>
+                    <div class="right-nav-left">
+                        <div class="right-input">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="bell-img">
+                            <img src="img/Bell.png" alt="">
+                            <div class="img-text">
+                          <a href="user-profile.html"><img src="img/Profile Picture.png" alt=""></a> 
+                                <div class="name">
+                                    <p class="name-name">Wade Warden</p>
+                                    <p class="name-email">wadewarden@gmail.com</p>
+                                </div>
+                            </div>
+                            <img src="img/down.png" alt="" id="view-profile" onclick="toggle()">
+                        </div>
+                        <div class="hamburger"><img src="img/hamburger.png" alt="" id="hamburger"
+                                onclick=" left_toggle() "></div>
+                    </div>
+                    <div class="profile-logout" id="profile-logout">
+                        <div class="profile"> <img src="img/view.png" alt="">
+                            <p>View Profile</p>
+                        </div>
+                        <div class="logout"> <img src="img/SignOut2.png" alt="">
+                            <p>logout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets-management-main ">
+                    <div class="main-profile">
+                        <div class="profile-top">
+
+                            <div class="main-bell"> <img src="img/profile-bell.png" alt="" class="profile-top-img">
+                            </div>
+                            <p class="profile-top-p1">Member Since July, 11,2024</p>
+
+                        </div>
+                        <div class="all-main-pic-profile">
+                            <div class="main-profile-pic">
+                                <img src="img/profile-pic.png" alt="">
+                                <p>User Name Here</p>
+                            </div>
+                            <div class="main-profile-pic-btn">
+                               <a href="edit-profile.html"> <button>Edit Profile</button></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="email-contact-address">
+                        <div class="email-contact-address-container">
+                            <div class="profile-email">
+                                <div class="email-profile-img"><img src="img/mainmessage.png" alt=""></div>
+                                <div class="email-profile-text">
+                                    <p class="emial-text-p1">Email</p>
+                                    <p>Johnexapmle9090@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="profile-email">
+                                <div class="email-profile-img"><img src="img/mainmessage.png" alt=""></div>
+                                <div class="email-profile-text">
+                                    <p class="emial-text-p1">Contact</p>
+                                    <p>+92 (999) 433 433</p>
+                                </div>
+                            </div>
+                            <div class="profile-email">
+                                <div class="email-profile-img"><img src="img/mainmessage.png" alt=""></div>
+                                <div class="email-profile-text">
+                                    <p class="emial-text-p1">Address</p>
+                                    <p> New York, 43Street Top Hightower</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-detail">
+                        <div class="setting">
+                            <p class="setting-p">Account Settings & Details</p>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Prenium plain</p>
+                                <p class="prenium-plain-left-p2">Next Payment Pay Detail: July 24, 2024</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                                <p class="prenium-plain-right-p1">
+                                    Manage Membership
+                                </p>
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Change plain</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                           
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Manage Payment Method</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                           
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Password</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                               
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Email</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                                <div class="prenium-plain-right-red">
+                                    Need verification
+                                </div>
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="prenium-plain">
+                            <div class="prenium-plain-left">
+                                <p class="prenium-plain-left-p1">Mobile Phone</p>
+                            </div>
+                            <div class="prenium-plain-right">
+                               
+                                <img src="img/right-direction.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="dashboard js/dashboard.js"></script>
+    </section>
+</body>
+
+</html>
