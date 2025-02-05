@@ -570,6 +570,27 @@ text-decoration: none;
   padding-bottom: 30px;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .customer-p1 {
   text-align: center;
   font-weight: 600;
@@ -583,7 +604,6 @@ text-decoration: none;
 }
 
 .customer-card {
-  width: calc(33% - 30px);
   color: white;
   background-color: #818181;
   background: linear-gradient(180deg, #1a73e8 0%, #0f4082 118.8%);
@@ -619,14 +639,7 @@ text-decoration: none;
   margin-bottom: 40px;
 }
 
-.card-1,
-.card-3 {
-  opacity: 0.55;
-}
 
-.card-2 {
-  scale: 1.15;
-}
 
 .customer::after {
   content: " ";
@@ -925,7 +938,7 @@ text-decoration: none;
   }
 
   .customer-card {
-    width: calc(50% - 60px);
+    /* width: calc(50%; */
     justify-content: space-evenly;
     margin-top: 10px;
   }
@@ -985,9 +998,9 @@ text-decoration: none;
       justify-content: space-evenly !important;
     }
 
-    .customer-card {
+    /* .customer-card {
       width: calc(64% - 0px);
-    }
+    } */
 
     .secondary-cards {
       margin-top: 20px;

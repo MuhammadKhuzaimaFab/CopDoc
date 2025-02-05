@@ -102,7 +102,7 @@ function again_cut() {
       responsive: true,
       plugins: {
         legend: {
-          position: 'top',
+          display: 'bottom',
         }
       }
     }
@@ -136,11 +136,15 @@ function again_cut() {
     },
     options: {
       responsive: true,
+      cutout:"50%",
       plugins: {
         legend: {
-          position: 'top',
+          display: false,
+        
         }
-      }
+      },
+      
+      
     }
   });
   const ctz = document.getElementById('gh-2').getContext('2d');
@@ -153,15 +157,33 @@ function again_cut() {
         data: [65, 59, 80, 81, 56, 55, 40],
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1
+        tension: 0.4
       }]
     },
     options: {
       responsive: true,
       plugins: {
         legend: {
-          position: 'top',
+          display: false,
+          position: 'bottom'
         }
+      },
+      scales: {
+        x: {
+          grid: {
+            display: false // Removes X-axis grid lines
+          }
+        },
+        y: {
+          grid: {
+            display: false // Removes Y-axis grid lines
+          }
+        }
+      },
+      animation: {
+        duration: 1000,  // Animation duration in milliseconds
+        easing: 'easeOutBounce'  // Easing function for smooth animation
       }
     }
   });
+  
